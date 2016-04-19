@@ -1,0 +1,21 @@
+block config
+  include ../config/variables
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="descripcion", content="#{descripcion}")
+    title #{titulo}
+    link(rel="icon", href="img/favicon.png")
+    link(rel="stylesheet", href="css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/styles.css")
+    script(src="js/jquery-1.12.1.min.js")
+  body
+    header.header#header
+      include ../blocks/header
+    main.main#main
+      block main
+    footer.footer#footer
+      include ../blocks/header
+    script(src="js/scripts.js")
